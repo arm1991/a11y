@@ -17,22 +17,22 @@
         <ul class="header-nav__options">
           <li class="header-nav__options-item">
             <a href="#about-us" target="_self">About Us</a>
+            <span class="header-vertical-line"></span>
           </li>
-          <span class="header-vertical-line"></span>
           <li class="header-nav__options-item">
             <a href="#contact-us" target="_self">Contact Us</a>
+            <span class="header-vertical-line"></span>
           </li>
-          <span class="header-vertical-line"></span>
           <li class="header-nav__options-item">
             <a href="./index.html" target="_blank">Blog</a>
+            <span class="header-vertical-line"></span>
           </li>
-          <span class="header-vertical-line"></span>
           <li class="header-nav__options-item">
             <a href="./index.html" target="_blank">Site Map</a>
+            <span class="header-vertical-line"></span>
           </li>
-          <span class="header-vertical-line"></span>
           <li class="header-nav__options-item dropdown">
-            <select name="" id="">
+            <select name="lang" aria-label="Page Language" id="page-language">
               <option selected value="en">Eng</option>
               <option value="am">Am</option>
               <option value="ru">Rus</option>
@@ -58,7 +58,7 @@
         <div class="hero-content">
           <h1 class="hero-title">Lorem ipsum dolor sit amet</h1>
           <div class="hero-text">
-            <h3 class="hero-sub-title">Lorem ipsum dolor sit amet</h3>
+            <h2 class="hero-sub-title">Lorem ipsum dolor sit amet</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend
               tincidunt posuere eu risus cursus. Senectus sed maecenas viverra
@@ -80,7 +80,7 @@
             <img src="./assets/images/Rectangle 570.png" alt="" />
           </div>
           <div class="about-us-item-content">
-            <h4 class="about-us-item-content-title">About Us</h4>
+            <h3 class="about-us-item-content-title">About Us</h3>
             <p class="about-us-item-content-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend
               tincidunt posuere eu risus cursus. Senectus sed maecenas viverra
@@ -104,7 +104,7 @@
             <img src="./assets/images/Rectangle 570.png" alt="" />
           </div>
           <div class="about-us-item-content">
-            <h4 class="about-us-item-content-title">About Us</h4>
+            <h3 class="about-us-item-content-title">About Us</h3>
             <p class="about-us-item-content-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend
               tincidunt posuere eu risus cursus. Senectus sed maecenas viverra
@@ -232,11 +232,19 @@
                 />
               </div>
               <div class="contact-us-form__row-item">
-                <label for="phone" class="contact-us-form__row-item__label">
+                <label
+                  for="phone"
+                  id="phone-number-code"
+                  class="contact-us-form__row-item__label"
+                >
                   Phone Number
                 </label>
-                <select name="" id="">
-                  <option selected value="en">
+                <select
+                  name="phone"
+                  id="form-phone"
+                  aria-labelledby="phone-number-code"
+                >
+                  <option selected value="380">
                     <span>+380</span>
                   </option>
                   <option value="321">+321</option>
@@ -264,8 +272,8 @@
                 <span
                   tabindex="0"
                   role="radio"
-                  aria-checked="fasle"
-                  aria-labeledby="ui-dev-label"
+                  aria-checked="false"
+                  aria-labelledby="ui-dev-label"
                   class="custom-radio-btn"
                   data-value="UI Developer"
                   data-selector="custom-radio-btn"
@@ -292,7 +300,7 @@
                   tabindex="-1"
                   role="radio"
                   aria-checked="false"
-                  aria-labeledby="ui-des-label"
+                  aria-labelledby="ui-des-label"
                   class="custom-radio-btn"
                   data-value="UI/UX Designer"
                   data-selector="custom-radio-btn"
@@ -319,7 +327,7 @@
                   tabindex="-1"
                   role="radio"
                   aria-checked="false"
-                  aria-labeledby="acc-ex-label"
+                  aria-labelledby="acc-ex-label"
                   class="custom-radio-btn"
                   data-value="Accessibility Expert"
                   data-selector="custom-radio-btn"
@@ -346,7 +354,7 @@
                   tabindex="-1"
                   role="radio"
                   aria-checked="false"
-                  aria-labeledby="qa-en-label"
+                  aria-labelledby="qa-en-label"
                   class="custom-radio-btn"
                   data-value="QA Engineer"
                   data-selector="custom-radio-btn"
@@ -374,7 +382,7 @@
                   tabindex="-1"
                   role="radio"
                   aria-checked="true"
-                  aria-labeledby="other-label"
+                  aria-labelledby="other-label"
                   class="custom-radio-btn"
                   data-value="Other"
                   data-selector="custom-radio-btn"
@@ -416,7 +424,7 @@
                   role="checkbox"
                   tabindex="0"
                   aria-checked="false"
-                  aria-labeledby="acc-term"
+                  aria-labelledby="acc-term-1-label"
                   class="custom-checkbox-btn"
                   data-value="Accept the Terms"
                   data-selector="custom-checkbox-btn"
@@ -435,7 +443,11 @@
                     />
                   </svg>
                 </span>
-                <label for="acc-term" class="contact-us-form__row-item__label">
+                <label
+                  for="acc-term"
+                  id="acc-term-1-label"
+                  class="contact-us-form__row-item__label"
+                >
                   Accept the Terms
                 </label>
               </div>
@@ -450,7 +462,7 @@
                   role="checkbox"
                   tabindex="0"
                   aria-checked="false"
-                  aria-labeledby="acc-term-2"
+                  aria-labelledby="acc-term-2-label"
                   class="custom-checkbox-btn"
                   data-value="Accept the Terms 2"
                   data-selector="custom-checkbox-btn"
@@ -471,6 +483,7 @@
                 </span>
                 <label
                   for="acc-term-2"
+                  id="acc-term-2-label"
                   class="contact-us-form__row-item__label"
                 >
                   Accept the Terms 2

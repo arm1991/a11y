@@ -13,6 +13,7 @@
       @include row(16px);
 
       &-item {
+        @include row(16px, center, center);
         @include text(18px, 150%, 400);
         color: var(--black);
         letter-spacing: 0%;
@@ -32,6 +33,7 @@
   }
 
   &-vertical-line {
+    display: inline-block;
     height: 18px;
     border: 0.5px solid var(--black);
   }
