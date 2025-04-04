@@ -1,0 +1,136 @@
+.footer {
+  @include section(24px);
+  @include col(24px, center, center);
+
+  &-text {
+    @include col(20px, flex-start, flex-start);
+
+    &__title {
+      @include text(48px, 100%, 700);
+      letter-spacing: 0%;
+      color: #000000;
+    }
+
+    &__desc {
+      @include text(18px, 145%, 400);
+      letter-spacing: 0%;
+      color: #000000;
+    }
+  }
+
+  &-searchbox {
+    @include row(30px, flex-end, flex-start);
+    margin-top: 12px;
+
+    &-input {
+      @include text(18px, 145%, 400);
+      color: var(--black);
+      min-width: 308px;
+      padding: 12px;
+      padding-left: 0;
+      border-bottom: 1px solid var(--black) !important;
+
+      &:focus {
+        outline-color: var(--black);
+      }
+    }
+
+    &-btn {
+      @include primary-button;
+      @include text(18px, 150%, 400);
+      letter-spacing: 0%;
+      padding: 16px 58px;
+    }
+  }
+
+  &-content {
+    @include row(0, flex-start, space-between);
+    width: 100%;
+  }
+
+  &-nav {
+    &__list {
+      @include col(16px, flex-start, flex-start);
+
+      &-item {
+        > a {
+          @include text(18px, 150%, 400);
+          color: var(--black);
+        }
+      }
+    }
+  }
+
+  &-contacts {
+    @include col(8px, flex-start, flex-start);
+
+    &__title {
+      @include text(18px, 145%, 400);
+      color: var(--black);
+    }
+
+    &__item {
+      @include text(18px, 145%, 400);
+      opacity: 0.6;
+      color: var(--black);
+
+      &.email {
+        text-decoration: underline;
+        letter-spacing: -2%;
+      }
+    }
+
+    &__icons {
+      @include row(36px, stretch, flex-start);
+      margin-top: 32px;
+
+      > a {
+        @include row(0, center, center);
+
+        > img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &-bottom {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    &__license {
+      align-self: center;
+      justify-self: center;
+      grid-column: 2 / 3;
+
+      > span {
+        @include text(14px, 145%, 400);
+        color: var(--black);
+      }
+    }
+
+    &__policy {
+      align-self: center;
+      justify-self: flex-end;
+      grid-column: 3 / 4;
+
+      &-list {
+        @include row(16px, center, flex-end);
+
+        &__item {
+          @include text(14px, 145%, 400);
+          letter-spacing: 0%;
+          color: var(--black);
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+
+  &-horizontal-line {
+    width: 100vw;
+    border: 0.5px solid #e9e9e9;
+  }
+}

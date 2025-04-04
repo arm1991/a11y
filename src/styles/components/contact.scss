@@ -1,0 +1,184 @@
+.contact-us {
+  @include section(80px);
+  padding-bottom: 120px;
+  background-color: var(--ternary-col);
+
+  &-title {
+    @include text(48px, 120%, 700);
+    color: var(--black);
+  }
+
+  &-text {
+    @include text(14px, 150%, 400);
+    color: var(--black);
+  }
+
+  &-container {
+    @include row(0, stretch);
+    border-radius: 12px;
+    background-color: var(--white);
+  }
+
+  &-info {
+    @include col(0, flex-start, space-between);
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 424px;
+    padding: 42px;
+    padding-bottom: 48px;
+    background-image: url("../../../public/assets/images/Rectangle 573.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__content {
+      @include col(56px, flex-start, center);
+    }
+
+    &__footer {
+      @include row(36px, center, center);
+    }
+
+    &__text {
+      @include col(16px, flex-start, center);
+    }
+
+    &__list {
+      @include col(18px, flex-start, center);
+
+      &-item {
+        @include row(24px, center, center);
+
+        > a {
+          @include text(14px, 150%, 400);
+          letter-spacing: 0%;
+          color: var(--black);
+        }
+      }
+    }
+  }
+
+  &-form {
+    @include col(26px, flex-start, center);
+    padding: 48px 20px;
+    flex: 1;
+
+    &__row {
+      @include row(18px);
+      width: 100%;
+      border: unset;
+      margin-inline: unset;
+      padding-inline: unset;
+      padding-block: unset;
+      min-inline-size: unset;
+
+      &-item {
+        @include col(8px, flex-start, center);
+        position: relative;
+        width: 100%;
+
+        &__label {
+          @include text(14px, 20px, 400);
+          color: var(--black);
+
+          letter-spacing: 0%;
+        }
+
+        &__input {
+          @include text(14px, 20px, 400);
+          width: 100%;
+          padding: 12px;
+          padding-left: 8px;
+          border-radius: 4px;
+          border: 1px solid var(--black);
+
+          &.textarea {
+            min-height: 104px;
+            resize: none;
+          }
+
+          &:focus {
+            transition: none;
+            outline-color: var(--primary-col);
+          }
+
+          &.phone {
+            padding-left: 70px;
+          }
+        }
+
+        > select {
+          @include text(14px, 20px, 400);
+          background-color: transparent;
+          letter-spacing: 0%;
+          color: var(--black);
+          padding-right: 4px;
+          border: none;
+          position: absolute;
+          left: 8px;
+          bottom: 12px;
+        }
+      }
+
+      &-radio-item {
+        @include row(10px, center, center);
+
+        > .custom-radio-btn {
+          @include row(0, center, center);
+          width: 18px;
+          height: 18px;
+          border-radius: 50%;
+          border: 2px solid var(--black);
+          background-color: var(--white);
+
+          > .inner-circle {
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background-color: var(--primary-col);
+          }
+        }
+
+        > input.radio:checked + .custom-radio-btn {
+          border: 2px solid var(--primary-col);
+          background-color: var(--white);
+
+          > .inner-circle {
+            width: 10px;
+            height: 10px;
+          }
+        }
+
+        > .custom-checkbox-btn {
+          @include row(0, center, center);
+          width: 16px;
+          height: 16px;
+          border: 2px solid #8392a6;
+          border-radius: 4px;
+        }
+
+        > input.checkbox:checked + .custom-checkbox-btn {
+          border: 2px solid var(--primary-col);
+          background-color: var(--primary-col);
+        }
+      }
+
+      &.checkbox {
+        gap: 48px;
+        justify-content: flex-start;
+      }
+    }
+
+    &-btn {
+      @include primary-button;
+      @include text(18px, 150%, 400);
+      letter-spacing: 0%;
+      padding: 12px 40px;
+      align-self: flex-end;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}

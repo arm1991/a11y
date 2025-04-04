@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../src/styles/index.css" />
+    <script src="../src/scripts/a11y/checkbox.js" defer></script>
+    <script src="../src/scripts/a11y/radio.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header-nav">
+        <a class="header-logo">
+          <img src="./assets/images/Logo.svg" alt="Page Logo" />
+        </a>
+        <ul class="header-nav__options">
+          <li class="header-nav__options-item">
+            <a href="#about-us" target="_self">About Us</a>
+          </li>
+          <span class="header-vertical-line"></span>
+          <li class="header-nav__options-item">
+            <a href="#contact-us" target="_self">Contact Us</a>
+          </li>
+          <span class="header-vertical-line"></span>
+          <li class="header-nav__options-item">
+            <a href="./index.html" target="_blank">Blog</a>
+          </li>
+          <span class="header-vertical-line"></span>
+          <li class="header-nav__options-item">
+            <a href="./index.html" target="_blank">Site Map</a>
+          </li>
+          <span class="header-vertical-line"></span>
+          <li class="header-nav__options-item dropdown">
+            <select name="" id="">
+              <option selected value="en">Eng</option>
+              <option value="am">Am</option>
+              <option value="ru">Rus</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-searchbox">
+        <input
+          class="header-searchbox-input"
+          id="header-searchbox"
+          type="text"
+          placeholder="Search this site"
+        />
+        <button class="header-searchbox-btn" aria-label="Search button">
+          <img src="./assets/images/search-icon.svg" alt="Search Button" />
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">Lorem ipsum dolor sit amet</h1>
+          <div class="hero-text">
+            <h3 class="hero-sub-title">Lorem ipsum dolor sit amet</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend
+              tincidunt posuere eu risus cursus. Senectus sed maecenas viverra
+              tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies.
+              Urna hendrerit morbi sed gravida. Nulla aliquam ac diam amet,
+              sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <button class="hero-btn">Buy Now</button>
+        </div>
+        <div class="hero-img">
+          <img src="./assets/images/unsplash_W5XTTLpk1-I.png" alt="" />
+        </div>
+      </section>
+      <section class="about-us" id="about-us">
+        <article class="about-us-item">
+          <div class="about-us-item-img">
+            <img src="./assets/images/Rectangle 570.png" alt="" />
+          </div>
+          <div class="about-us-item-content">
+            <h4 class="about-us-item-content-title">About Us</h4>
+            <p class="about-us-item-content-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend
+              tincidunt posuere eu risus cursus. Senectus sed maecenas viverra
+              tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies.
+              Urna hendrerit morbi sed gravida. Nulla aliquam ac diam amet,
+              sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Eleifend
+              tincidunt posuere eu risus cursus.
+            </p>
+            <a
+              href="index.html"
+              target="_self"
+              class="about-us-item-content-link"
+            >
+              <mark>Learn more about</mark> →
+            </a>
+          </div>
+        </article>
+        <article class="about-us-item">
+          <div class="about-us-item-img">
+            <img src="./assets/images/Rectangle 570.png" alt="" />
+          </div>
+          <div class="about-us-item-content">
+            <h4 class="about-us-item-content-title">About Us</h4>
+            <p class="about-us-item-content-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend
+              tincidunt posuere eu risus cursus. Senectus sed maecenas viverra
+              tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies.
+              Urna hendrerit morbi sed gravida. Nulla aliquam ac diam amet,
+              sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. Eleifend
+              tincidunt posuere eu risus cursus.
+            </p>
+            <a
+              href="index.html"
+              target="_self"
+              class="about-us-item-content-link"
+            >
+              <mark>Learn more about</mark> →
+            </a>
+          </div>
+        </article>
+      </section>
+      <section class="contact-us" id="contact-us">
+        <div class="contact-us-container">
+          <div class="contact-us-info">
+            <div class="contact-us-info__content">
+              <div class="contact-us-info__text">
+                <h2 class="contact-us-title">Contact Us</h2>
+                <p class="contact-us-text">
+                  Fill up the form and ur Team will get back to you within 24
+                  hours. Happy to see your message!
+                </p>
+              </div>
+              <ul class="contact-us-info__list">
+                <li class="contact-us-info__list-item">
+                  <span>
+                    <img
+                      src="./assets/images/fb-icon.svg"
+                      alt="Link To facebook"
+                    />
+                  </span>
+                  <a href="tel:+380 93 15 32 456">+380 93 15 32 456</a>
+                </li>
+                <li class="contact-us-info__list-item">
+                  <span>
+                    <img
+                      src="./assets/images/fb-icon.svg"
+                      alt="Link To facebook"
+                    />
+                  </span>
+                  <a href="mailto:example@email.com">example@gmail.com</a>
+                </li>
+                <li class="contact-us-info__list-item">
+                  <span>
+                    <img
+                      src="./assets/images/fb-icon.svg"
+                      alt="Link To facebook"
+                    />
+                  </span>
+                  <a
+                    href="https://www.google.com/maps/d/u/0/viewer?vpsrc=6&ctz=-60&ie=UTF8&msa=0&t=h&ll=49.84299200000003%2C24.063062999999982&spn=0.009686%2C0.018239&z=15&source=embed&mid=1wq-E_LwAkpap-N9WpGmqenDbctQ"
+                    target="_blank"
+                  >
+                    Pidmurma 5a, Lviv
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="contact-us-info__footer">
+              <a target="_blank" href="https://www.facebook.com/">
+                <img src="./assets/images/fb-icon.svg" alt="Link To facebook" />
+              </a>
+              <a target="_blank" href="https://www.facebook.com/">
+                <img src="./assets/images/fb-icon.svg" alt="Link To facebook" />
+              </a>
+              <a target="_blank" href="https://www.facebook.com/">
+                <img src="./assets/images/fb-icon.svg" alt="Link To facebook" />
+              </a>
+            </div>
+          </div>
+          <form action="" id="contact-form" class="contact-us-form">
+            <div class="contact-us-form__row">
+              <div class="contact-us-form__row-item">
+                <label
+                  for="first-name"
+                  class="contact-us-form__row-item__label"
+                >
+                  First Name
+                </label>
+                <input
+                  class="contact-us-form__row-item__input"
+                  type="text"
+                  autocomplete="given-name"
+                  placeholder="John"
+                  id="first-name"
+                  required
+                />
+              </div>
+              <div class="contact-us-form__row-item">
+                <label class="contact-us-form__row-item__label" for="last-name">
+                  Last Name
+                </label>
+                <input
+                  type="text"
+                  class="contact-us-form__row-item__input"
+                  autocomplete="family-name"
+                  placeholder="Doe"
+                  id="last-name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="contact-us-form__row">
+              <div class="contact-us-form__row-item">
+                <label
+                  for="contact-form-email"
+                  class="contact-us-form__row-item__label"
+                >
+                  Email
+                </label>
+                <input
+                  type="email"
+                  class="contact-us-form__row-item__input"
+                  autocomplete="email"
+                  placeholder="example@gmail.com"
+                  id="contact-form-email"
+                  required
+                />
+              </div>
+              <div class="contact-us-form__row-item">
+                <label for="phone" class="contact-us-form__row-item__label">
+                  Phone Number
+                </label>
+                <select name="" id="">
+                  <option selected value="en">
+                    <span>+380</span>
+                  </option>
+                  <option value="321">+321</option>
+                  <option value="443">+443</option>
+                </select>
+                <input
+                  type="text"
+                  class="contact-us-form__row-item__input phone"
+                  autocomplete="tel"
+                  placeholder="| 00 000 00 00"
+                  id="phone"
+                  required
+                />
+              </div>
+            </div>
+            <fieldset role="radiogroup" class="contact-us-form__row">
+              <legend class="hidden"></legend>
+              <div class="contact-us-form__row-radio-item">
+                <input
+                  class="hidden radio"
+                  type="radio"
+                  name="emplyee"
+                  id="ui-dev"
+                />
+                <span
+                  tabindex="0"
+                  role="radio"
+                  aria-checked="fasle"
+                  aria-labeledby="ui-dev-label"
+                  class="custom-radio-btn"
+                  data-value="UI Developer"
+                  data-selector="custom-radio-btn"
+                  data-input-id="ui-dev"
+                >
+                  <span class="inner-circle"></span>
+                </span>
+                <label
+                  id="ui-dev-label"
+                  for="ui-dev"
+                  class="contact-us-form__row-item__label radio-label"
+                >
+                  UI Developer
+                </label>
+              </div>
+              <div class="contact-us-form__row-radio-item">
+                <input
+                  class="hidden radio"
+                  type="radio"
+                  name="emplyee"
+                  id="ui-des"
+                />
+                <span
+                  tabindex="-1"
+                  role="radio"
+                  aria-checked="false"
+                  aria-labeledby="ui-des-label"
+                  class="custom-radio-btn"
+                  data-value="UI/UX Designer"
+                  data-selector="custom-radio-btn"
+                  data-input-id="ui-des"
+                >
+                  <span class="inner-circle"></span>
+                </span>
+                <label
+                  id="ui-des-label"
+                  for="ui-des"
+                  class="contact-us-form__row-item__label radio-label"
+                >
+                  UI/UX Designer
+                </label>
+              </div>
+              <div class="contact-us-form__row-radio-item">
+                <input
+                  class="hidden radio"
+                  type="radio"
+                  name="emplyee"
+                  id="acc-ex"
+                />
+                <span
+                  tabindex="-1"
+                  role="radio"
+                  aria-checked="false"
+                  aria-labeledby="acc-ex-label"
+                  class="custom-radio-btn"
+                  data-value="Accessibility Expert"
+                  data-selector="custom-radio-btn"
+                  data-input-id="acc-ex"
+                >
+                  <span class="inner-circle"></span>
+                </span>
+                <label
+                  id="acc-ex-label"
+                  for="acc-ex"
+                  class="contact-us-form__row-item__label radio-label"
+                >
+                  Accessibility Expert
+                </label>
+              </div>
+              <div class="contact-us-form__row-radio-item">
+                <input
+                  class="hidden radio"
+                  type="radio"
+                  name="emplyee"
+                  id="qa-en"
+                />
+                <span
+                  tabindex="-1"
+                  role="radio"
+                  aria-checked="false"
+                  aria-labeledby="qa-en-label"
+                  class="custom-radio-btn"
+                  data-value="QA Engineer"
+                  data-selector="custom-radio-btn"
+                  data-input-id="qa-en"
+                >
+                  <span class="inner-circle"></span>
+                </span>
+                <label
+                  id="qa-en-label"
+                  for="qa-en"
+                  class="contact-us-form__row-item__label radio-label"
+                >
+                  QA Engineer
+                </label>
+              </div>
+              <div class="contact-us-form__row-radio-item">
+                <input
+                  class="hidden radio"
+                  type="radio"
+                  name="emplyee"
+                  checked
+                  id="other"
+                />
+                <span
+                  tabindex="-1"
+                  role="radio"
+                  aria-checked="true"
+                  aria-labeledby="other-label"
+                  class="custom-radio-btn"
+                  data-value="Other"
+                  data-selector="custom-radio-btn"
+                  data-input-id="other"
+                >
+                  <span class="inner-circle"></span>
+                </span>
+                <label
+                  id="other-label"
+                  for="other"
+                  class="contact-us-form__row-item__label radio-label"
+                >
+                  Other
+                </label>
+              </div>
+            </fieldset>
+            <div class="contact-us-form__row">
+              <div class="contact-us-form__row-item">
+                <label for="message" class="contact-us-form__row-item__label">
+                  Message
+                </label>
+                <textarea
+                  name="message"
+                  class="contact-us-form__row-item__input textarea"
+                  id="message"
+                  placeholder="Text here..."
+                ></textarea>
+              </div>
+            </div>
+            <div class="contact-us-form__row checkbox">
+              <div class="contact-us-form__row-radio-item">
+                <input
+                  type="checkbox"
+                  class="checkbox hidden"
+                  tabindex="-1"
+                  id="acc-term"
+                />
+                <span
+                  role="checkbox"
+                  tabindex="0"
+                  aria-checked="false"
+                  aria-labeledby="acc-term"
+                  class="custom-checkbox-btn"
+                  data-value="Accept the Terms"
+                  data-selector="custom-checkbox-btn"
+                  data-input-id="acc-term"
+                >
+                  <svg
+                    width="10"
+                    height="8"
+                    viewBox="0 0 10 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.70019 0.389933L3.92019 5.38993L2.29019 3.27993C2.12708 3.07041 1.88742 2.93427 1.62393 2.90145C1.36044 2.86863 1.09471 2.94182 0.885189 3.10493C0.675668 3.26804 0.539523 3.5077 0.506704 3.77119C0.473885 4.03468 0.547081 4.30041 0.710189 4.50993L3.14019 7.61993C3.23436 7.73911 3.35445 7.83527 3.49133 7.90111C3.62821 7.96696 3.7783 8.00075 3.93019 7.99993C4.08291 7.99957 4.23351 7.96422 4.37045 7.89662C4.50739 7.82902 4.62703 7.73095 4.72019 7.60993L9.29019 1.60993C9.45197 1.39776 9.52284 1.13001 9.48721 0.865583C9.45158 0.601156 9.31236 0.361714 9.10019 0.199932C8.88802 0.0381502 8.62027 -0.0327202 8.35584 0.00291173C8.09141 0.0385436 7.85197 0.17776 7.69019 0.389933H7.70019Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+                <label for="acc-term" class="contact-us-form__row-item__label">
+                  Accept the Terms
+                </label>
+              </div>
+              <div class="contact-us-form__row-radio-item">
+                <input
+                  type="checkbox"
+                  class="checkbox hidden"
+                  id="acc-term-2"
+                  tabindex="-1"
+                />
+                <span
+                  role="checkbox"
+                  tabindex="0"
+                  aria-checked="false"
+                  aria-labeledby="acc-term-2"
+                  class="custom-checkbox-btn"
+                  data-value="Accept the Terms 2"
+                  data-selector="custom-checkbox-btn"
+                  data-input-id="acc-term-2"
+                >
+                  <svg
+                    width="10"
+                    height="8"
+                    viewBox="0 0 10 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.70019 0.389933L3.92019 5.38993L2.29019 3.27993C2.12708 3.07041 1.88742 2.93427 1.62393 2.90145C1.36044 2.86863 1.09471 2.94182 0.885189 3.10493C0.675668 3.26804 0.539523 3.5077 0.506704 3.77119C0.473885 4.03468 0.547081 4.30041 0.710189 4.50993L3.14019 7.61993C3.23436 7.73911 3.35445 7.83527 3.49133 7.90111C3.62821 7.96696 3.7783 8.00075 3.93019 7.99993C4.08291 7.99957 4.23351 7.96422 4.37045 7.89662C4.50739 7.82902 4.62703 7.73095 4.72019 7.60993L9.29019 1.60993C9.45197 1.39776 9.52284 1.13001 9.48721 0.865583C9.45158 0.601156 9.31236 0.361714 9.10019 0.199932C8.88802 0.0381502 8.62027 -0.0327202 8.35584 0.00291173C8.09141 0.0385436 7.85197 0.17776 7.69019 0.389933H7.70019Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
+                <label
+                  for="acc-term-2"
+                  class="contact-us-form__row-item__label"
+                >
+                  Accept the Terms 2
+                </label>
+              </div>
+            </div>
+            <button class="contact-us-form-btn" type="submit">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-text">
+          <h2 class="footer-text__title">PlantMe</h2>
+          <label for="subscribe" class="footer-text__desc">
+            Subscribe and be the first to know about our news and promotions.
+          </label>
+          <div class="footer-searchbox">
+            <input
+              class="footer-searchbox-input"
+              autocomplete="email"
+              id="subscribe"
+              type="email"
+              placeholder="example@gmail.com"
+            />
+            <button class="footer-searchbox-btn">Subscribe</button>
+          </div>
+        </div>
+        <nav class="footer-nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__list-item">
+              <a target="_self" href="#about-us">About Us</a>
+            </li>
+            <li class="footer-nav__list-item">
+              <a target="_self" href="#contact-us">Contact Us</a>
+            </li>
+            <li class="footer-nav__list-item">
+              <a target="_self" href="./index.html">Blog</a>
+            </li>
+            <li class="footer-nav__list-item">
+              <a target="_self" href="./index.html">Site Map</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="footer-contacts">
+          <span class="footer-contacts__title">Contacts</span>
+          <a class="footer-contacts__item" href="tel:+380 93 15 32 456">
+            +380 93 15 32 456
+          </a>
+          <a
+            class="footer-contacts__item email"
+            href="mailto:plantme.store@email.com"
+          >
+            plantme.store@gmail.com
+          </a>
+          <div class="footer-contacts__icons">
+            <a href="./index.html">
+              <img src="./assets/images/image 46.png" alt="VISA" />
+            </a>
+            <a href="./index.html">
+              <img src="./assets/images/image 47.png" alt="MasterCard" />
+            </a>
+          </div>
+        </address>
+      </div>
+      <hr class="footer-horizontal-line" />
+      <div class="footer-bottom">
+        <div class="footer-bottom__license">
+          <span>© 2022 PlantMe. All Rights Reserved</span>
+        </div>
+        <address class="footer-bottom__policy">
+          <ul class="footer-bottom__policy-list">
+            <li class="footer-bottom__policy-list__item">
+              <a href="./index.html" target="_self">Privacy Policy</a>
+            </li>
+            <li class="footer-bottom__policy-list__item">
+              <a href="./index.html" target="_self">Terms of service</a>
+            </li>
+            <li class="footer-bottom__policy-list__item">
+              <a href="./index.html" target="_self">Language</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+@mixin row($gap: 0px, $align-items: center, $justify: space-between) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify;
+  gap: $gap;
+}
+
+@mixin col($gap: 0px, $align-items: center, $justify: center) {
+  @include row($gap, $align-items, $justify);
+  flex-direction: column;
+}
+
+@mixin section($padding: 0) {
+  padding: $padding 64px;
+}
+
+@mixin primary-button {
+  @include row;
+  color: var(--white);
+  background-color: var(--primary-col);
+}
+
+@mixin text($size, $height, $weight) {
+  font-family: "Outfit", sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+}

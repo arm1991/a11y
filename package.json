@@ -1,0 +1,16 @@
+{
+  "name": "module-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass -w src/styles/main.scss src/styles/index.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

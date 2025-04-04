@@ -1,0 +1,43 @@
+.hero {
+  @include section();
+  @include row(18px);
+  background-color: var(--secondary-col);
+
+  padding-top: 24px;
+  padding-bottom: 60px;
+
+  &-content {
+    @include col(36px, flex-start, center);
+  }
+
+  &-title {
+    @include text(48px, 120%, 700);
+    letter-spacing: 0%;
+    color: var(--primary-col);
+  }
+
+  &-sub-title {
+    @include text(24px, 120%, 500);
+    letter-spacing: 0%;
+    color: var(--primary-col);
+  }
+
+  &-text {
+    @include col(12px, flex-start);
+
+    > p {
+      @include text(14px, 150%, 400);
+      max-width: 536px;
+      color: var(--black);
+      letter-spacing: 0%;
+    }
+  }
+
+  &-btn {
+    @include primary-button;
+    @include text(18px, 150%, 400);
+
+    padding: 12px 64px;
+    text-transform: capitalize;
+  }
+}
