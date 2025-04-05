@@ -15,8 +15,6 @@ function handleKeyDown(e, checkbox) {
       checkbox.setAttribute("aria-checked", "true");
     }
   }
-
-  // checkbox.removeEventListener("keydown", handleKeyDownWrapper);
 }
 
 function handleKeyDownWrapper(e) {
